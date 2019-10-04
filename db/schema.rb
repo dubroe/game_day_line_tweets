@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_04_044916) do
+ActiveRecord::Schema.define(version: 2019_10_04_053625) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(version: 2019_10_04_044916) do
   create_table "teams", id: false, force: :cascade do |t|
     t.string "name"
     t.string "abbr"
+  end
+
+  create_table "tweets", force: :cascade do |t|
+    t.integer "beat_writer_id"
+    t.string "link_to_tweet"
+    t.text "tweet_embed_code"
+    t.datetime "tweeted_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["beat_writer_id"], name: "index_tweets_on_beat_writer_id"
   end
 
 end
