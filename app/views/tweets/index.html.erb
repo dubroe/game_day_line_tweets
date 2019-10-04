@@ -1,0 +1,7 @@
+<% if @team.present? %>
+  <h1><%= @team.name %></h1>
+<% end %>
+
+<% @tweets.reverse_each do |tweet| %>
+  <%= tweet.tweet_embed_code.html_safe %>
+<% end %>
