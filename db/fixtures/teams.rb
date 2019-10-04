@@ -109,4 +109,5 @@ BeatWriter.seed(
   { handle: 'ikhurshudyan', team_abbr: 'WSH' },
   { handle: 'WPGMurat', team_abbr: 'WPG' },
   { handle: 'BrianMunzTSN', team_abbr: 'WPG' },
+  { handle: 'SunGarrioch', team_abbr: 'OTT' },
 )
