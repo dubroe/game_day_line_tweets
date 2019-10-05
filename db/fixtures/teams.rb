@@ -112,4 +112,5 @@ BeatWriter.seed(
   { id: 218, handle: 'SunGarrioch', team_abbr: 'OTT' },
   { id: 219, handle: 'rboyd0105', team_abbr: 'PHI' },
   { id: 220, handle: 'rossmckeon', team_abbr: 'SJS' },
+  { id: 221, handle: 'Sheng_Peng', team_abbr: 'SJS' },
 )
