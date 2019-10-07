@@ -115,4 +115,5 @@ BeatWriter.seed(
   { id: 221, handle: 'Sheng_Peng', team_abbr: 'SJS' },
   { id: 222, handle: 'Jack_A_Harris', team_abbr: 'LAK' },
   { id: 223, handle: 'engelheather', team_abbr: 'BUF' },
+  { id: 224, handle: 'DallasStars', team_abbr: 'DAL' },
 )
