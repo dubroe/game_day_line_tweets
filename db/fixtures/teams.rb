@@ -121,4 +121,5 @@ BeatWriter.seed(
   { id: 227, handle: 'MDeFranks', team_abbr: 'DAL' },
   { id: 228, handle: 'ChrisRyan_NJ', team_abbr: 'NJD' },
   { id: 229, handle: 'BatchHockey', team_abbr: 'VAN' },
+  { id: 230, handle: 'mattyports', team_abbr: 'BOS' },
 )
