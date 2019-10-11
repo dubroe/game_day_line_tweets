@@ -125,4 +125,5 @@ BeatWriter.seed(
   { id: 231, handle: 'glefrancoisLP', team_abbr: 'MTL' },
   { id: 232, handle: 'WiebeAthletic', team_abbr: 'WPG' },
   { id: 233, handle: 'mikemorrealeNHL', team_abbr: 'NJD' },
+  { id: 234, handle: 'JacketsInsider', team_abbr: 'CBJ' },
 )
