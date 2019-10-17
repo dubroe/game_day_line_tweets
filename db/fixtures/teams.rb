@@ -129,4 +129,5 @@ BeatWriter.seed(
   { id: 235, handle: 'MikeDeFabo', team_abbr: 'PIT' },
   { id: 236, handle: 'LLysowski', team_abbr: 'BUF' },
   { id: 237, handle: 'Bob_Stauffer', team_abbr: 'EDM' },
+  { id: 238, handle: 'BrettCyrgalis', team_abbr: 'NYR' },
 )
