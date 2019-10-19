@@ -13,9 +13,15 @@ class TweetsController < ApplicationController
     handle = params[:text].scan(/RT @(.*?):/).flatten.first
     beat_writer = BeatWriter.find_by(handle: handle)
 
-    raise "No beat writer found for Tweet: #{params[:link_to_tweet]}" if beat_writer.nil?
+    if beat_writer.nil?
+      matching_team = Team.all.detect do |team|
+        (team.player_names.split & params[:tweet_embed_code].downcase.split(/\W/)).length > 2
+      end
+      beat_writer = BeatWriter.create!(handle: handle, team_abbr: matching_team.abbr) if matching_team.present?
+    end
 
-    beat_writer.tweets.create!(
+    Tweet.create!(
+      beat_writer: beat_writer,
       link_to_tweet: params[:link_to_tweet],
       tweet_embed_code: params[:tweet_embed_code],
       tweeted_at: DateTime.parse(params[:created_at])
