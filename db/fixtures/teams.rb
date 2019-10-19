@@ -131,4 +131,5 @@ BeatWriter.seed(
   { id: 237, handle: 'Bob_Stauffer', team_abbr: 'EDM' },
   { id: 238, handle: 'BrettCyrgalis', team_abbr: 'NYR' },
   { id: 239, handle: 'kyleshohara', team_abbr: 'ANA' },
+  { id: 240, handle: 'JFChaumontJDM', team_abbr: 'MTL' },
 )
