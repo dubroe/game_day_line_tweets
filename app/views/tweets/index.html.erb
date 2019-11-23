@@ -1,16 +1,16 @@
-<%= form_tag tweets_path, method: :get do %>
-  <%= select_tag :team, team_options(@team) %>
-  <%= submit_tag "Go To Team", name: nil %>
-<% end %>
-
 <% if @team.present? %>
-  <h1>
-    <%= @team.name %>
-    <%= image_tag("logos/#{@team.abbr.downcase}.svg", size: 55) %>
+  <h1 class="text-2xl flex items-center my-8">
+    <%= image_tag("logos/#{@team.abbr.downcase}.svg", size: 55, class: "mr-4" ) %>
+    <span>
+      <%= @team.name %>
+    </span>
   </h1>
+
   <%= link_to 'Last Game Lines', "https://frozenpool.dobbersports.com/frozenpool_lastgamelines.php?team=#{@team.dobber_abbr}", target: :_blank %>
 <% end %>
 
-<% @tweets.reverse_each do |tweet| %>
-  <%= tweet.tweet_embed_code.html_safe %>
-<% end %>
+<div class="container mx-auto w-1/2">
+  <% @tweets.reverse_each do |tweet| %>
+    <%= tweet.tweet_embed_code.html_safe %>
+  <% end %>
+</div>

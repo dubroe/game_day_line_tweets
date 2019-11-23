@@ -3,6 +3,10 @@
 class TweetsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
+  def layout
+
+  end
+
   def index
     @team = Team.find_by(abbr: params[:team].to_s.upcase)
     tweets_relation = @team&.tweets || Tweet
