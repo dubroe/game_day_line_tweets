@@ -8,6 +8,7 @@
     <%= @team.name %>
     <%= image_tag("logos/#{@team.abbr.downcase}.svg", size: 55) %>
   </h1>
+  <%= link_to 'Last Game Lines', "https://frozenpool.dobbersports.com/frozenpool_lastgamelines.php?team=#{@team.dobber_abbr}", target: :_blank %>
 <% end %>
 
 <% @tweets.reverse_each do |tweet| %>
