@@ -4,7 +4,10 @@
 <% end %>
 
 <% if @team.present? %>
-  <h1><%= @team.name %></h1>
+  <h1>
+    <%= @team.name %>
+    <%= image_tag("logos/#{@team.abbr.downcase}.svg", size: 55) %>
+  </h1>
 <% end %>
 
 <% @tweets.reverse_each do |tweet| %>
