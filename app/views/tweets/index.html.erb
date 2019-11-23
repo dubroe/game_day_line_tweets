@@ -9,7 +9,7 @@
   <%= link_to 'Last Game Lines', "https://frozenpool.dobbersports.com/frozenpool_lastgamelines.php?team=#{@team.dobber_abbr}", target: :_blank %>
 <% end %>
 
-<div class="container mx-auto w-1/2">
+<div class="">
   <% @tweets.reverse_each do |tweet| %>
     <%= tweet.tweet_embed_code.html_safe %>
   <% end %>
