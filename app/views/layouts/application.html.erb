@@ -23,7 +23,7 @@
         <ul>
           <% @teams.each do |team| %>
             <li class="">
-              <%= link_to root_url(team: team.abbr), class: "p-2 flex items-center" do %>
+              <%= link_to root_url(team: team.abbr), class: "p-2 flex items-center hover:bg-white" do %>
                 <div class="mr-4 h-8 w-8">
                   <%= image_tag("logos/#{team.abbr.downcase}.svg", size: 55, class: "h-8 w-8") %>
                 </div>
