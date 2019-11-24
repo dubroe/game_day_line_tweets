@@ -11,6 +11,6 @@
 
 <div class="">
   <% @tweets.reverse_each do |tweet| %>
-    <%= tweet.tweet_embed_code.html_safe %>
+    <%= tweet.initially_hidden_embed_code.html_safe %>
   <% end %>
 </div>
