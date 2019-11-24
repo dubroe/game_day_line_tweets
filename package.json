@@ -16,5 +16,5 @@
   "scripts": {
     "start": "node server.js", // serves the application
     "heroku-postbuild": "webpack -p" // runs after installation
-  },
+  }
 }
