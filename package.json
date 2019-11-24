@@ -12,9 +12,5 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.8.2"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "webpack -p"
   }
 }
