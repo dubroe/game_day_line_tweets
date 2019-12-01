@@ -1,13 +1,14 @@
-<% if @team.present? %>
-  <h1 class="text-2xl flex items-center my-8">
+<h1 class="text-2xl flex items-center my-8">
+  <% if @team.present? %>
     <%= image_tag("logos/#{@team.abbr.downcase}.svg", size: 55, class: "mr-4" ) %>
     <span>
       <%= @team.name %>
+      <%= link_to '(Last Game Lines)', "https://frozenpool.dobbersports.com/frozenpool_lastgamelines.php?team=#{@team.dobber_abbr}", target: :_blank, class: 'text-xs ml-1 text-blue-600 visited:text-purple-600' %>
     </span>
-  </h1>
-
-  <%= link_to 'Last Game Lines', "https://frozenpool.dobbersports.com/frozenpool_lastgamelines.php?team=#{@team.dobber_abbr}", target: :_blank %>
-<% end %>
+  <% else %>
+    All Tweets
+  <% end %>
+</h1>
 
 <div class="">
   <% @tweets.reverse_each do |tweet| %>
