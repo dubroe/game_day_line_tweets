@@ -10,7 +10,7 @@
   <% end %>
 </h1>
 
-<div class="">
+<div class="" style="width: 550px">
   <% @tweets.reverse_each do |tweet| %>
     <%= tweet.initially_hidden_embed_code.html_safe %>
   <% end %>

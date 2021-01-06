@@ -10,7 +10,7 @@ class TweetsController < ApplicationController
   def index
     @team = Team.find_by(abbr: params[:team].to_s.upcase)
     tweets_relation = @team&.tweets || Tweet
-    @tweets = tweets_relation.last(50)
+    @tweets = tweets_relation.last(10)
   end
 
   def create
