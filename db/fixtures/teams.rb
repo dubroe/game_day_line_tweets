@@ -83,7 +83,7 @@ BeatWriter.seed(
   { id: 189, handle: 'vzmercogliano', team_abbr: 'NYR' },
   { id: 190, handle: 'JoeFortunatoBSB', team_abbr: 'NYR' },
   { id: 191, handle: 'tsn_wally', team_abbr: 'OTT' },
-  { id: 192, handle: 'hailey_salvian', team_abbr: 'OTT' },
+  { id: 192, handle: 'hailey_salvian', team_abbr: 'CGY' },
   { id: 193, handle: 'NHLAdamK', team_abbr: 'PHI' },
   { id: 194, handle: 'billmeltzer', team_abbr: 'PHI' },
   { id: 195, handle: 'davegisaac', team_abbr: 'PHI' },
